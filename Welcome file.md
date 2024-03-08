@@ -8,14 +8,18 @@
 <pre><code>sudo apt update &amp;&amp; sudo apt install nginx
 </code></pre>
 <ol>
-<li>
-<p><strong>Navigate to the Nginx sites-available directory</strong>:</p>
+<li><strong>Navigate to the Nginx sites-available directory</strong>:</li>
+</ol>
+<blockquote>
 <p><code>cd /etc/nginx/sites-available</code></p>
-</li>
-<li>
-<p><strong>Edit the default file</strong>:</p>
+</blockquote>
+<ol start="2">
+<li><strong>Edit the default file</strong>:</li>
+</ol>
+<blockquote>
 <p><code>sudo nano default</code></p>
-</li>
+</blockquote>
+<ol start="3">
 <li>
 <p><strong>Add your domain after <code>server_name</code></strong>: Inside the <code>server</code> block in the <code>default</code> file, you’ll find a line starting with <code>server_name</code>. Add your domain name after this line. For example:</p>
 <p><code>server_name example.com;</code></p>
