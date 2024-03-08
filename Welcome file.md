@@ -18,9 +18,12 @@
 <pre><code> sudo nano default
 </code></pre>
 </li>
-<li>
-<p><strong>Add your domain after <code>server_name</code></strong>: Inside the <code>server</code> block in the <code>default</code> file, you’ll find a line starting with <code>server_name</code>. Add your domain name after this line. For example:</p>
-</li>
+</ol>
+<p><img src="https://election-booth.s3.ap-south-1.amazonaws.com/ssl/nginx_default_file.png" alt=" "><br>
+<img src="https://election-booth.s3.ap-south-1.amazonaws.com/ssl/nginx_default_file-1.png" alt=" "><br>
+<img src="https://election-booth.s3.ap-south-1.amazonaws.com/ssl/nginx_default_file-2.png" alt=""></p>
+<ol start="3">
+<li><strong>Add your domain after <code>server_name</code></strong>: Inside the <code>server</code> block in the <code>default</code> file, you’ll find a line starting with <code>server_name</code>. Add your domain name after this line. For example:</li>
 </ol>
 <ul>
 <li>
@@ -107,7 +110,8 @@
 <pre><code>sudo certbot --nginx -d &lt;domain name or sub domain&gt; 
 </code></pre>
 <ul>
-<li>This command uses Certbot to obtain an SSL certificate for your domain using the nginx plugin. Replace <code>&lt;domain name or sub domain&gt;</code> with your actual domain name or subdomain.</li>
+<li>This command uses Certbot to obtain an SSL certificate for your domain using the nginx plugin. Replace <code>&lt;domain name or sub domain&gt;</code> with your actual domain name or subdomain.<br>
+<img src="https://election-booth.s3.ap-south-1.amazonaws.com/ssl/ssl_cert_commands.png" alt="Command s "></li>
 </ul>
 </li>
 </ol>
