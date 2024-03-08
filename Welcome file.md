@@ -4,7 +4,7 @@
 ---
 
 <h1 id="ssl-certification">SSL Certification</h1>
-<h2 id="install-nginx">Install Nginx</h2>
+<p><strong>Install Nginx</strong></p>
 <pre><code>sudo apt update &amp;&amp; sudo apt install nginx
 </code></pre>
 <ol>
