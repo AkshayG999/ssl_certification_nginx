@@ -106,6 +106,19 @@
 </ul>
 </li>
 <li>
+<p><strong>Install CertBot First</strong>:</p>
+<pre><code>sudo apt install software-properties-common</code></pre>
+<pre><code>sudo add-apt-repository universe</code></pre>
+<pre><code>sudo add-apt-repository ppa:certbot/certbot</code></pre>
+<ul>
+<li>Install Certbot: Once the repository is added, install Certbot's package using `apt`:</li>
+<pre><code>sudo apt install certbot python3-certbot-nginx
+</code></pre>
+<pre><code>certbot --version
+</code></prev>
+</ul>
+</li>
+<li>
 <p><strong>Obtain SSL Certificate with Certbot</strong>:</p>
 <pre><code>sudo certbot --nginx -d &lt;domain name or sub domain&gt; 
 </code></pre>
@@ -116,3 +129,6 @@
 </li>
 </ol>
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjAwMDIwMDgxOF19
+-->
