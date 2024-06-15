@@ -1,129 +1,112 @@
 
-
-## Table of Contents
--   [System Setup](#system-setup)
-    -   [Update System Packages](#update-system-packages)
-    -   [Node.js Installation](#nodejs-installation)
-    -   [NVM Installation](#nvm-installation)
-    -   [PM2 Installation](#pm2-installation)
-    -   [Google Chrome Installation](#google-chrome-installation)
-    -   [Yarn Installation](#yarn-installation)
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+  <li><a href="#system-setup">System Setup</a>
+    <ul>
+      <li><a href="#update-system-packages">Update System Packages</a></li>
+      <li><a href="#nodejs-installation">Node.js Installation</a></li>
+      <li><a href="#nvm-installation">NVM Installation</a></li>
+      <li><a href="#pm2-installation">PM2 Installation</a></li>
+      <li><a href="#google-chrome-installation">Google Chrome Installation</a></li>
+      <li><a href="#yarn-installation">Yarn Installation</a></li>
+    </ul>
+  </li>
+</ul>
 
 <div align="right">
-
-[![](#table-of-contents)](#readme-top)
-
+  <a href="#readme-top"><img src="path-to-your-image" alt="Back to top"></a>
 </div>
 
- 
-## System Setup
+<h2 id="system-setup">System Setup</h2>
+<p>Follow the steps below to prepare your system for development.</p>
 
-Follow the steps below to prepare your system for development.
+<h3 id="update-system-packages">Update System Packages</h3>
+<p>Start by updating your system’s package list to ensure all packages are up to date:</p>
+<pre><code class="language-bash">sudo apt update
+</code></pre>
 
-### Update System Packages
+<h3 id="nodejs-installation">Node.js Installation</h3>
+<p>Install the latest LTS version of Node.js using the following commands:</p>
+<pre><code class="language-bash">curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+sudo apt-get install -y nodejs
+</code></pre>
+<p>Verify the installation:</p>
+<pre><code class="language-bash">node --version
+</code></pre>
 
-Start by updating your system's package list to ensure all packages are up to date: 
+<h3 id="nvm-installation">NVM Installation</h3>
+<p>Install NVM (Node Version Manager) to manage Node.js versions:</p>
+<pre><code class="language-bash">curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+</code></pre>
+<p>After the script finishes, apply the changes:</p>
+<pre><code class="language-bash">source ~/.bashrc
+</code></pre>
+<p>Verify NVM installation:</p>
+<pre><code class="language-bash">nvm --version
+</code></pre>
+<p>Install the latest version of Node.js using NVM:</p>
+<pre><code class="language-bash">nvm install node
+</code></pre>
 
-    sudo apt update
+<h3 id="pm2-installation">PM2 Installation</h3>
+<p>Install PM2, a process manager for Node.js applications:</p>
+<pre><code class="language-bash">npm install pm2 -g
+</code></pre>
+<p>Verify PM2 installation:</p>
+<pre><code class="language-bash">pm2 --version
+</code></pre>
 
-### Node.js Installation
+<h3 id="google-chrome-installation">Google Chrome Installation</h3>
+<p>Install Google Chrome by following these steps:</p>
+<ol>
+  <li>
+    <p>Install dependencies required for Google Chrome:</p>
+    <pre><code class="language-bash">sudo apt install -y wget apt-transport-https ca-certificates curl</code></pre>
+  </li>
+  <li>
+    <p>Download the Google Chrome .deb package:</p>
+    <pre><code class="language-bash">wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</code></pre>
+  </li>
+  <li>
+    <p>Install Google Chrome:</p>
+    <pre><code class="language-bash">sudo dpkg -i google-chrome-stable_current_amd64.deb</code></pre>
+  </li>
+  <li>
+    <p>If there are dependency issues, resolve them with:</p>
+    <pre><code class="language-bash">sudo apt-get -f install</code></pre>
+  </li>
+  <li>
+    <p>Verify the installation:</p>
+    <pre><code class="language-bash">google-chrome --version</code></pre>
+  </li>
+  <li>
+    <p>To locate the installation path:</p>
+    <pre><code class="language-bash">which google-chrome</code></pre>
+  </li>
+</ol>
 
-Install the latest LTS version of Node.js using the following commands: 
-
-    curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
-    sudo apt-get install -y nodejs 
-
-Verify the installation: 
-
-    node --version
-
-### NVM Installation
-
-Install NVM (Node Version Manager) to manage Node.js versions: 
-
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-
- 
-
-After the script finishes, apply the changes:
-
-    source ~/.bashrc
-
- 
-Verify NVM installation: 
-
-    nvm --version
-
- 
-
-Install the latest version of Node.js using NVM: 
-
-    nvm install node
-
-
-### PM2 Installation
-
-Install PM2, a process manager for Node.js applications: 
-
-    npm install pm2 -g
-
-Verify PM2 installation: 
-
-    pm2 --version
-
-### Google Chrome Installation
-
-Install Google Chrome by following these steps:
-
-1.  Install dependencies required for Google Chrome:
-    
-     sudo apt install -y wget apt-transport-https ca-certificates curl
-    
-2.  Download the Google Chrome .deb package:
-    
-	`wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb`
-
-    
-3.  Install Google Chrome:
-    
-	`sudo dpkg -i google-chrome-stable_current_amd64.deb`
-
- 
-4.  If there are dependency issues, resolve them with: 
-
-	`sudo apt-get -f install`
-    
-6.  Verify the installation:
-    
-    `google-chrome --version` 
-    
-7.  To locate the installation path:
-     
-    `which google-chrome` 
-    
-
-### Yarn Installation
-
-Install Yarn, a package manager, by following these steps:
-
-1.  Add the Yarn repository key:
-    
-    `curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -` 
-    
-2.  Add the Yarn repository to your system's package sources:
-     
-    `echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list` 
-    
-3.  Update your package index:
-    
-    `sudo apt update` 
-    
-4.  Install Yarn:
-    
-    sudo apt install yarn
-    
+<h3 id="yarn-installation">Yarn Installation</h3>
+<p>Install Yarn, a package manager, by following these steps:</p>
+<ol>
+  <li>
+    <p>Add the Yarn repository key:</p>
+    <pre><code class="language-bash">curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -</code></pre>
+  </li>
+  <li>
+    <p>Add the Yarn repository to your system’s package sources:</p>
+    <pre><code class="language-bash">echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list</code></pre>
+  </li>
+  <li>
+    <p>Update your package index:</p>
+    <pre><code class="language-bash">sudo apt update</code></pre>
+  </li>
+  <li>
+    <p>Install Yarn:</p>
+    <pre><code class="language-bash">sudo apt install yarn</code></pre>
+  </li>
+</ol>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjY5NTk2MTYsMTk4NjE2NjEyNCwtOD
-EwMzQwMzU4XX0=
+eyJoaXN0b3J5IjpbMTIzODg4NDU1MiwtMTAyNjk1OTYxNiwxOT
+g2MTY2MTI0LC04MTAzNDAzNThdfQ==
 -->
