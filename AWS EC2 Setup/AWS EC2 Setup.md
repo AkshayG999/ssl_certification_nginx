@@ -14,8 +14,6 @@
 </ul>
 
 <div align="right">
-  <a href="#readme-top"><img src="path-to-your-image" alt="Back to top"></a>
-</div>
 
 <h2 id="system-setup">System Setup</h2>
 <p>Follow the steps below to prepare your system for development.</p>
@@ -107,6 +105,6 @@ sudo apt-get install -y nodejs
 </ol>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzODg4NDU1MiwtMTAyNjk1OTYxNiwxOT
-g2MTY2MTI0LC04MTAzNDAzNThdfQ==
+eyJoaXN0b3J5IjpbLTk3NjAzMjIzMiwxMjM4ODg0NTUyLC0xMD
+I2OTU5NjE2LDE5ODYxNjYxMjQsLTgxMDM0MDM1OF19
 -->
