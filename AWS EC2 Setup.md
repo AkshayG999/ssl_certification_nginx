@@ -58,7 +58,7 @@ sudo apt-get install -y nodejs
 <ol>
 <li>
 <p>Install dependencies required for Google Chrome:</p>
-<p>sudo apt install -y wget apt-transport-https ca-certificates curl</p>
+<pre><code>sudo apt install -y wget apt-transport-https ca-certificates curl</code></pre>
 </li>
 <li>
 <p>Download the Google Chrome .deb package:</p>
