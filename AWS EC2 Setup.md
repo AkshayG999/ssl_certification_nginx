@@ -58,11 +58,11 @@ sudo apt-get install -y nodejs
 <ol>
 <li>
 <p>Install dependencies required for Google Chrome:</p>
-<p><code>sudo apt install -y wget apt-transport-https ca-certificates curl</code></p>
+<p>sudo apt install -y wget apt-transport-https ca-certificates curl</p>
 </li>
 <li>
 <p>Download the Google Chrome .deb package:</p>
-<p><code>wget https://dl.google.com/linux/direct/google-chrome-		stable_current_amd64.deb</code></p>
+<p><code>wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</code></p>
 </li>
 <li>
 <p>Install Google Chrome:</p>
@@ -98,7 +98,7 @@ sudo apt-get install -y nodejs
 </li>
 <li>
 <p>Install Yarn:</p>
-<p><code>sudo apt install yarn</code></p>
+<p>sudo apt install yarn</p>
 </li>
 </ol>
 
