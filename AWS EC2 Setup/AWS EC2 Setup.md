@@ -76,8 +76,7 @@ Verify PM2 installation:
 Install Google Chrome by following these steps:
 
 1.  Install dependencies required for Google Chrome:
-
-
+    
      `sudo apt install -y wget apt-transport-https ca-certificates curl`
     
 2.  Download the Google Chrome .deb package:
@@ -125,6 +124,6 @@ Install Yarn, a package manager, by following these steps:
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNzE1NDQ0NiwxOTg2MTY2MTI0LC04MT
+eyJoaXN0b3J5IjpbMTk1NjA4MTU0MCwxOTg2MTY2MTI0LC04MT
 AzNDAzNThdfQ==
 -->
