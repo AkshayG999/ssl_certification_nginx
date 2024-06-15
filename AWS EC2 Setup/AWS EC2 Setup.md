@@ -122,9 +122,9 @@ Install Yarn, a package manager, by following these steps:
     
 4.  Install Yarn:
     
-    `sudo apt install yarn`
+    sudo apt install yarn
     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxMDM0MDM1OF19
+eyJoaXN0b3J5IjpbMTk4NjE2NjEyNCwtODEwMzQwMzU4XX0=
 -->
