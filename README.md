@@ -124,7 +124,7 @@
 </code></pre>
 <ul>
 <li>This command uses Certbot to obtain an SSL certificate for your domain using the nginx plugin. Replace <code>&lt;domain name or sub domain&gt;</code> with your actual domain name or subdomain.<br>
-<img src="https://election-booth.s3.ap-south-1.amazonaws.com/ssl/ssl_cert_commands.png" alt="Command s "></li>
+<img src="https://github.com/AkshayG999/ssl_certification_nginx/blob/master/public/ssl_cert_commands.png" alt="Command s "></li>
 </ul>
 </li>
 </ol>
