@@ -19,9 +19,9 @@
 </code></pre>
 </li>
 </ol>
-<p><img src="https://election-booth.s3.ap-south-1.amazonaws.com/ssl/nginx_default_file.png" alt=" "><br>
-<img src="https://election-booth.s3.ap-south-1.amazonaws.com/ssl/nginx_default_file-1.png" alt=" "><br>
-<img src="https://election-booth.s3.ap-south-1.amazonaws.com/ssl/nginx_default_file-2.png" alt=""></p>
+<p><img src="https://github.com/AkshayG999/ssl_certification_nginx/blob/master/public/nginx_default_file.png" alt=" "><br>
+<img src="https://github.com/AkshayG999/ssl_certification_nginx/blob/master/public/nginx_default_file-1.png" alt=" "><br>
+<img src="https://github.com/AkshayG999/ssl_certification_nginx/blob/master/public/nginx_default_file-2.png" alt=""></p>
 <ol start="3">
 <li><strong>Add your domain after <code>server_name</code></strong>: Inside the <code>server</code> block in the <code>default</code> file, you’ll find a line starting with <code>server_name</code>. Add your domain name after this line. For example:</li>
 </ol>
