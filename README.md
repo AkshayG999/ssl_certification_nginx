@@ -163,3 +163,6 @@ openssl command
 ```bash
 openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 -nodes
 ```
+```bash
+HTTPS=true SSL_KEY=key.pem SSL_CERT=cert.pem python main.py
+```
