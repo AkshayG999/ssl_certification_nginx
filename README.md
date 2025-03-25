@@ -158,3 +158,8 @@ For more information on SSL/TLS, visit [Let's Encrypt](https://letsencrypt.org/)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMjAwMDIwMDgxOF19
 -->
+
+openssl command
+```bash
+openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 -nodes
+```
